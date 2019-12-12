@@ -86,7 +86,7 @@ public class Exercise3 {
 			standardDeviation += Math.pow(s.calculateMarkAverage() - mean, 2);
 		}
 		
-		standardDeviation = Math.sqrt(standardDeviation / students.size());
+		standardDeviation = Math.sqrt(standardDeviation / (students.size()-1));
 		return standardDeviation;
 	}
 
