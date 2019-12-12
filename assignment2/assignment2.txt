@@ -1,0 +1,75 @@
+Assignment Exercise 2:
+Write a Java program that enables two people to play the following game. Read the description of the game carefully. 
+We start with a pile of chips. Your game will allow for numbers that are odd. 
+We get the names of the two players. 
+The first player removes between 1 and (number of chips - 1) / 2 from the pile. 
+From then on the players alternate turns, removing chips from the pile until it is empty. 
+Each player removes at least one chip in each turn, but never more than the half of the number of chips remaining in the pile (if odd number remains, then half of 1 less than number of chips remaining). 
+Once the pile becomes empty, the game is over. 
+Since the total number of chips is odd, one player will have an even number of chips and the other player will have an odd number of chips. 
+The winner of the game is the player with an even number of chips. 
+When a game is over, your program should ask whether to play another game. 
+If the answer is y or Y, it should play another game; otherwise the program ends. This prompt should occur after each game. 
+Note that it is two humans who are playing the game. The computer is merely serving as a referee. 
+In other words, you don’t have to worry about determining a strategy for winning the game, nor do you have to worry about programming such a strategy. 
+A Sample Run 
+Here is a sample run. 
+What is the name of the first player? Emily 
+What is the name of the second player? emily 
+Both players cannot be named emily. Enter a different name: Tom 
+How many chips does the initial pile contain? 1 
+You have to start with at least 3 chips. Choose another number: 22 
+You have to start with an odd number of chips. Choose another number: 23 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Emily has 0 chips. 
+Tom has 0 chips. 
+It is your turn, Emily. 
+There are 23 chips remaining. 
+You may take any number of chips from 1 to 11. How many will you take, Emily? 7 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Tom has 0 chips. 
+Emily has 7 chips. 
+It is your turn, Tom. 
+There are 16 chips remaining. 
+You may take any number of chips from 1 to 8. How many will you take, Tom? 0 
+Illegal move: you must take at least one chip. 
+How many will you take, Tom? 16 
+Illegal move: you may not take more than 8 chips. 
+How many will you take, Tom? 8 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Emily has 7 chips. 
+Tom has 8 chips. 
+It is your turn, Emily. 
+There are 8 chips remaining. 
+You may take any number of chips from 1 to 4. How many will you take, Emily? 4 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Tom has 8 chips. 
+Emily has 11 chips. 
+It is your turn, Tom. 
+There are 4 chips remaining. 
+You may take any number of chips from 1 to 2. How many will you take, Tom? 0 
+Illegal move: you must take at least one chip. 
+How many will you take, Tom? 1 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Emily has 11 chips. 
+Tom has 9 chips. 
+It is your turn, Emily. 
+There are 3 chips remaining. 
+You may take any number of chips from 1 to 1. How many will you take, Emily? 1
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Tom has 9 chips. 
+Emily has 12 chips. 
+It is your turn, Tom. 
+There are 2 chips remaining. 
+You may take any number of chips from 1 to 1. How many will you take, Tom? 1 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Emily has 12 chips. 
+Tom has 10 chips. 
+It is your turn, Emily. 
+There is 1 chip remaining. 
+How many will you take, Emily? 1
+Emily has 13 chips. 
+Tom has 10 chips. 
+Tom wins! 
+Play another game? (y/n) y 
+Start a new game like before…

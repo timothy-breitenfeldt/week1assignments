@@ -1,0 +1,5 @@
+Assignment Exercise 1:
+1) user is asked a question to guess a number
+2) if the number he guesses is within 10 numbers plus or minus of the number the java program has, then exit out and give the answer
+3) if the number he guesses is not within 10 numbers, ask the user to keep trying and give him more chances.
+4) if he is not able to guess within 5 chances, exit and display ‘Sorry’
