@@ -1,0 +1,31 @@
+Exercise 4
+Date - Time API Questions
+
+1.	 Which class would you use to store your birthday in years, months, days, seconds, and nanoseconds?
+To store a birthdate, use the LocalDateTime class.
+LocalDateTime birthdate = LocalDateTime.of(1994, 3, 10, 0, 0, 0, 0);
+
+2.	 Given a random date, how would you find the date of the previous Thursday?
+LocalDate date = LocalDate.now();
+LocalDate previousThursday = date.with(TemporalAdjusters.previous(DayOfWeek.THURSDAY));
+
+3.	 What is the difference between a ZoneId and a ZoneOffset?
+A zone ID identifys a zone and provides the rules for converting between an Instant and LocalDateTime, where a zone offset is the difference of hours between the timezone and UTC.
+
+4.	 How would you convert an Instant to a ZonedDateTime? How would you convert a ZonedDateTime to an Instant?
+Converting Instant to ZonedDateTime:
+'Instant instant = Instant.now();
+ZonedDateTime conversion = instant.atZone(ZoneId.of("Asia/Tokyo"));
+Convert ZonedDateTime to Instant:
+ZonedDateTime dateTime = dateTime.atZone(ZoneId.of("Asia/Tokyo"));
+Instant instant = dateTime.toInstant();
+    
+5.	 Write an example that, for a given year, reports the length of each month within that year.
+See Exercise4.java question5 method for answer.
+
+6.	 Write an example that, for a given month of the current year, lists all of the Mondays in that month.
+See Exercise4.java question6 method for answer.
+
+7.	 Write an example that tests whether a given date occurs on Friday the 13th.
+See Exercise4.java question7 method for answer.
+
